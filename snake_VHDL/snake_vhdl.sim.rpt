@@ -1,0 +1,419 @@
+Simulator report for snake_vhdl
+Wed Jun 17 22:29:20 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 60.0 s       ;
+; Simulation Netlist Size     ; 127 nodes    ;
+; Simulation Coverage         ;      35.44 % ;
+; Total Number of Transitions ; 1893         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C16F484C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      35.44 % ;
+; Total nodes checked                                 ; 127          ;
+; Total output ports checked                          ; 158          ;
+; Total output ports with complete 1/0-value coverage ; 56           ;
+; Total output ports with no 1/0-value coverage       ; 95           ;
+; Total output ports with no 1-value coverage         ; 98           ;
+; Total output ports with no 0-value coverage         ; 99           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                    ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |snake_vhdl|num[3]           ; |snake_vhdl|num[3]           ; q                ;
+; |snake_vhdl|num[2]           ; |snake_vhdl|num[2]           ; q                ;
+; |snake_vhdl|num[1]           ; |snake_vhdl|num[1]           ; q                ;
+; |snake_vhdl|Add0~0           ; |snake_vhdl|Add0~0           ; combout          ;
+; |snake_vhdl|Add0~0           ; |snake_vhdl|Add0~1           ; cout             ;
+; |snake_vhdl|Add0~2           ; |snake_vhdl|Add0~2           ; combout          ;
+; |snake_vhdl|Add0~2           ; |snake_vhdl|Add0~3           ; cout             ;
+; |snake_vhdl|Add0~4           ; |snake_vhdl|Add0~4           ; combout          ;
+; |snake_vhdl|Add0~4           ; |snake_vhdl|Add0~5           ; cout             ;
+; |snake_vhdl|Add0~6           ; |snake_vhdl|Add0~6           ; combout          ;
+; |snake_vhdl|Add0~6           ; |snake_vhdl|Add0~7           ; cout             ;
+; |snake_vhdl|Add0~8           ; |snake_vhdl|Add0~8           ; combout          ;
+; |snake_vhdl|Equal8~0         ; |snake_vhdl|Equal8~0         ; combout          ;
+; |snake_vhdl|Equal8~1         ; |snake_vhdl|Equal8~1         ; combout          ;
+; |snake_vhdl|num[0]           ; |snake_vhdl|num[0]           ; q                ;
+; |snake_vhdl|Equal0~8         ; |snake_vhdl|Equal0~8         ; combout          ;
+; |snake_vhdl|Equal0~9         ; |snake_vhdl|Equal0~9         ; combout          ;
+; |snake_vhdl|WideOr0          ; |snake_vhdl|WideOr0          ; combout          ;
+; |snake_vhdl|WideOr1          ; |snake_vhdl|WideOr1          ; combout          ;
+; |snake_vhdl|WideOr2~0        ; |snake_vhdl|WideOr2~0        ; combout          ;
+; |snake_vhdl|Equal4~0         ; |snake_vhdl|Equal4~0         ; combout          ;
+; |snake_vhdl|WideOr8          ; |snake_vhdl|WideOr8          ; combout          ;
+; |snake_vhdl|WideOr6          ; |snake_vhdl|WideOr6          ; combout          ;
+; |snake_vhdl|WideOr7          ; |snake_vhdl|WideOr7          ; combout          ;
+; |snake_vhdl|WideOr5          ; |snake_vhdl|WideOr5          ; combout          ;
+; |snake_vhdl|WideOr9~0        ; |snake_vhdl|WideOr9~0        ; combout          ;
+; |snake_vhdl|WideOr4~0        ; |snake_vhdl|WideOr4~0        ; combout          ;
+; |snake_vhdl|WideOr4          ; |snake_vhdl|WideOr4          ; combout          ;
+; |snake_vhdl|WideOr3~2        ; |snake_vhdl|WideOr3~2        ; combout          ;
+; |snake_vhdl|Equal3~0         ; |snake_vhdl|Equal3~0         ; combout          ;
+; |snake_vhdl|num[31]~65       ; |snake_vhdl|num[31]~65       ; combout          ;
+; |snake_vhdl|num~66           ; |snake_vhdl|num~66           ; combout          ;
+; |snake_vhdl|WideOr3          ; |snake_vhdl|WideOr3          ; combout          ;
+; |snake_vhdl|a1~output        ; |snake_vhdl|a1~output        ; o                ;
+; |snake_vhdl|a1               ; |snake_vhdl|a1               ; padout           ;
+; |snake_vhdl|a2~output        ; |snake_vhdl|a2~output        ; o                ;
+; |snake_vhdl|a2               ; |snake_vhdl|a2               ; padout           ;
+; |snake_vhdl|b2~output        ; |snake_vhdl|b2~output        ; o                ;
+; |snake_vhdl|b2               ; |snake_vhdl|b2               ; padout           ;
+; |snake_vhdl|c2~output        ; |snake_vhdl|c2~output        ; o                ;
+; |snake_vhdl|c2               ; |snake_vhdl|c2               ; padout           ;
+; |snake_vhdl|d1~output        ; |snake_vhdl|d1~output        ; o                ;
+; |snake_vhdl|d1               ; |snake_vhdl|d1               ; padout           ;
+; |snake_vhdl|d2~output        ; |snake_vhdl|d2~output        ; o                ;
+; |snake_vhdl|d2               ; |snake_vhdl|d2               ; padout           ;
+; |snake_vhdl|e1~output        ; |snake_vhdl|e1~output        ; o                ;
+; |snake_vhdl|e1               ; |snake_vhdl|e1               ; padout           ;
+; |snake_vhdl|f1~output        ; |snake_vhdl|f1~output        ; o                ;
+; |snake_vhdl|f1               ; |snake_vhdl|f1               ; padout           ;
+; |snake_vhdl|g1~output        ; |snake_vhdl|g1~output        ; o                ;
+; |snake_vhdl|g1               ; |snake_vhdl|g1               ; padout           ;
+; |snake_vhdl|g2~output        ; |snake_vhdl|g2~output        ; o                ;
+; |snake_vhdl|g2               ; |snake_vhdl|g2               ; padout           ;
+; |snake_vhdl|clk~input        ; |snake_vhdl|clk~input        ; o                ;
+; |snake_vhdl|clk              ; |snake_vhdl|clk              ; padout           ;
+; |snake_vhdl|clk~inputclkctrl ; |snake_vhdl|clk~inputclkctrl ; outclk           ;
++------------------------------+------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                             ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |snake_vhdl|num[30]     ; |snake_vhdl|num[30]     ; q                ;
+; |snake_vhdl|num[29]     ; |snake_vhdl|num[29]     ; q                ;
+; |snake_vhdl|num[28]     ; |snake_vhdl|num[28]     ; q                ;
+; |snake_vhdl|num[27]     ; |snake_vhdl|num[27]     ; q                ;
+; |snake_vhdl|num[26]     ; |snake_vhdl|num[26]     ; q                ;
+; |snake_vhdl|num[25]     ; |snake_vhdl|num[25]     ; q                ;
+; |snake_vhdl|num[24]     ; |snake_vhdl|num[24]     ; q                ;
+; |snake_vhdl|num[23]     ; |snake_vhdl|num[23]     ; q                ;
+; |snake_vhdl|num[22]     ; |snake_vhdl|num[22]     ; q                ;
+; |snake_vhdl|num[21]     ; |snake_vhdl|num[21]     ; q                ;
+; |snake_vhdl|num[20]     ; |snake_vhdl|num[20]     ; q                ;
+; |snake_vhdl|num[19]     ; |snake_vhdl|num[19]     ; q                ;
+; |snake_vhdl|num[18]     ; |snake_vhdl|num[18]     ; q                ;
+; |snake_vhdl|num[17]     ; |snake_vhdl|num[17]     ; q                ;
+; |snake_vhdl|num[16]     ; |snake_vhdl|num[16]     ; q                ;
+; |snake_vhdl|num[15]     ; |snake_vhdl|num[15]     ; q                ;
+; |snake_vhdl|num[14]     ; |snake_vhdl|num[14]     ; q                ;
+; |snake_vhdl|num[13]     ; |snake_vhdl|num[13]     ; q                ;
+; |snake_vhdl|num[12]     ; |snake_vhdl|num[12]     ; q                ;
+; |snake_vhdl|num[11]     ; |snake_vhdl|num[11]     ; q                ;
+; |snake_vhdl|num[10]     ; |snake_vhdl|num[10]     ; q                ;
+; |snake_vhdl|num[9]      ; |snake_vhdl|num[9]      ; q                ;
+; |snake_vhdl|num[8]      ; |snake_vhdl|num[8]      ; q                ;
+; |snake_vhdl|num[7]      ; |snake_vhdl|num[7]      ; q                ;
+; |snake_vhdl|num[6]      ; |snake_vhdl|num[6]      ; q                ;
+; |snake_vhdl|num[5]      ; |snake_vhdl|num[5]      ; q                ;
+; |snake_vhdl|num[4]      ; |snake_vhdl|num[4]      ; q                ;
+; |snake_vhdl|Add0~8      ; |snake_vhdl|Add0~9      ; cout             ;
+; |snake_vhdl|Add0~10     ; |snake_vhdl|Add0~10     ; combout          ;
+; |snake_vhdl|Add0~10     ; |snake_vhdl|Add0~11     ; cout             ;
+; |snake_vhdl|Add0~12     ; |snake_vhdl|Add0~12     ; combout          ;
+; |snake_vhdl|Add0~12     ; |snake_vhdl|Add0~13     ; cout             ;
+; |snake_vhdl|Add0~14     ; |snake_vhdl|Add0~14     ; combout          ;
+; |snake_vhdl|Add0~14     ; |snake_vhdl|Add0~15     ; cout             ;
+; |snake_vhdl|Add0~16     ; |snake_vhdl|Add0~16     ; combout          ;
+; |snake_vhdl|Add0~16     ; |snake_vhdl|Add0~17     ; cout             ;
+; |snake_vhdl|Add0~18     ; |snake_vhdl|Add0~18     ; combout          ;
+; |snake_vhdl|Add0~18     ; |snake_vhdl|Add0~19     ; cout             ;
+; |snake_vhdl|Add0~20     ; |snake_vhdl|Add0~20     ; combout          ;
+; |snake_vhdl|Add0~20     ; |snake_vhdl|Add0~21     ; cout             ;
+; |snake_vhdl|Add0~22     ; |snake_vhdl|Add0~22     ; combout          ;
+; |snake_vhdl|Add0~22     ; |snake_vhdl|Add0~23     ; cout             ;
+; |snake_vhdl|Add0~24     ; |snake_vhdl|Add0~24     ; combout          ;
+; |snake_vhdl|Add0~24     ; |snake_vhdl|Add0~25     ; cout             ;
+; |snake_vhdl|Add0~26     ; |snake_vhdl|Add0~26     ; combout          ;
+; |snake_vhdl|Add0~26     ; |snake_vhdl|Add0~27     ; cout             ;
+; |snake_vhdl|Add0~28     ; |snake_vhdl|Add0~28     ; combout          ;
+; |snake_vhdl|Add0~28     ; |snake_vhdl|Add0~29     ; cout             ;
+; |snake_vhdl|Add0~30     ; |snake_vhdl|Add0~30     ; combout          ;
+; |snake_vhdl|Add0~30     ; |snake_vhdl|Add0~31     ; cout             ;
+; |snake_vhdl|Add0~32     ; |snake_vhdl|Add0~32     ; combout          ;
+; |snake_vhdl|Add0~32     ; |snake_vhdl|Add0~33     ; cout             ;
+; |snake_vhdl|Add0~34     ; |snake_vhdl|Add0~34     ; combout          ;
+; |snake_vhdl|Add0~34     ; |snake_vhdl|Add0~35     ; cout             ;
+; |snake_vhdl|Add0~36     ; |snake_vhdl|Add0~36     ; combout          ;
+; |snake_vhdl|Add0~36     ; |snake_vhdl|Add0~37     ; cout             ;
+; |snake_vhdl|Add0~38     ; |snake_vhdl|Add0~38     ; combout          ;
+; |snake_vhdl|Add0~38     ; |snake_vhdl|Add0~39     ; cout             ;
+; |snake_vhdl|Add0~40     ; |snake_vhdl|Add0~40     ; combout          ;
+; |snake_vhdl|Add0~40     ; |snake_vhdl|Add0~41     ; cout             ;
+; |snake_vhdl|Add0~42     ; |snake_vhdl|Add0~42     ; combout          ;
+; |snake_vhdl|Add0~42     ; |snake_vhdl|Add0~43     ; cout             ;
+; |snake_vhdl|Add0~44     ; |snake_vhdl|Add0~44     ; combout          ;
+; |snake_vhdl|Add0~44     ; |snake_vhdl|Add0~45     ; cout             ;
+; |snake_vhdl|Add0~46     ; |snake_vhdl|Add0~46     ; combout          ;
+; |snake_vhdl|Add0~46     ; |snake_vhdl|Add0~47     ; cout             ;
+; |snake_vhdl|Add0~48     ; |snake_vhdl|Add0~48     ; combout          ;
+; |snake_vhdl|Add0~48     ; |snake_vhdl|Add0~49     ; cout             ;
+; |snake_vhdl|Add0~50     ; |snake_vhdl|Add0~50     ; combout          ;
+; |snake_vhdl|Add0~50     ; |snake_vhdl|Add0~51     ; cout             ;
+; |snake_vhdl|Add0~52     ; |snake_vhdl|Add0~52     ; combout          ;
+; |snake_vhdl|Add0~52     ; |snake_vhdl|Add0~53     ; cout             ;
+; |snake_vhdl|Add0~54     ; |snake_vhdl|Add0~54     ; combout          ;
+; |snake_vhdl|Add0~54     ; |snake_vhdl|Add0~55     ; cout             ;
+; |snake_vhdl|Add0~56     ; |snake_vhdl|Add0~56     ; combout          ;
+; |snake_vhdl|Add0~56     ; |snake_vhdl|Add0~57     ; cout             ;
+; |snake_vhdl|Add0~58     ; |snake_vhdl|Add0~58     ; combout          ;
+; |snake_vhdl|Add0~58     ; |snake_vhdl|Add0~59     ; cout             ;
+; |snake_vhdl|Add0~60     ; |snake_vhdl|Add0~60     ; combout          ;
+; |snake_vhdl|Add0~60     ; |snake_vhdl|Add0~61     ; cout             ;
+; |snake_vhdl|Add0~62     ; |snake_vhdl|Add0~62     ; combout          ;
+; |snake_vhdl|Equal0~1    ; |snake_vhdl|Equal0~1    ; combout          ;
+; |snake_vhdl|Equal0~2    ; |snake_vhdl|Equal0~2    ; combout          ;
+; |snake_vhdl|Equal0~3    ; |snake_vhdl|Equal0~3    ; combout          ;
+; |snake_vhdl|Equal0~5    ; |snake_vhdl|Equal0~5    ; combout          ;
+; |snake_vhdl|Equal0~6    ; |snake_vhdl|Equal0~6    ; combout          ;
+; |snake_vhdl|Equal0~7    ; |snake_vhdl|Equal0~7    ; combout          ;
+; |snake_vhdl|num~64      ; |snake_vhdl|num~64      ; combout          ;
+; |snake_vhdl|b1~output   ; |snake_vhdl|b1~output   ; o                ;
+; |snake_vhdl|b1          ; |snake_vhdl|b1          ; padout           ;
+; |snake_vhdl|c1~output   ; |snake_vhdl|c1~output   ; o                ;
+; |snake_vhdl|c1          ; |snake_vhdl|c1          ; padout           ;
+; |snake_vhdl|e2~output   ; |snake_vhdl|e2~output   ; o                ;
+; |snake_vhdl|e2          ; |snake_vhdl|e2          ; padout           ;
+; |snake_vhdl|f2~output   ; |snake_vhdl|f2~output   ; o                ;
+; |snake_vhdl|f2          ; |snake_vhdl|f2          ; padout           ;
+; |snake_vhdl|reset~input ; |snake_vhdl|reset~input ; o                ;
+; |snake_vhdl|reset       ; |snake_vhdl|reset       ; padout           ;
++-------------------------+-------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------+
+; Missing 0-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |snake_vhdl|num[30]   ; |snake_vhdl|num[30]   ; q                ;
+; |snake_vhdl|num[29]   ; |snake_vhdl|num[29]   ; q                ;
+; |snake_vhdl|num[28]   ; |snake_vhdl|num[28]   ; q                ;
+; |snake_vhdl|num[27]   ; |snake_vhdl|num[27]   ; q                ;
+; |snake_vhdl|num[26]   ; |snake_vhdl|num[26]   ; q                ;
+; |snake_vhdl|num[25]   ; |snake_vhdl|num[25]   ; q                ;
+; |snake_vhdl|num[24]   ; |snake_vhdl|num[24]   ; q                ;
+; |snake_vhdl|num[23]   ; |snake_vhdl|num[23]   ; q                ;
+; |snake_vhdl|num[22]   ; |snake_vhdl|num[22]   ; q                ;
+; |snake_vhdl|num[21]   ; |snake_vhdl|num[21]   ; q                ;
+; |snake_vhdl|num[20]   ; |snake_vhdl|num[20]   ; q                ;
+; |snake_vhdl|num[19]   ; |snake_vhdl|num[19]   ; q                ;
+; |snake_vhdl|num[18]   ; |snake_vhdl|num[18]   ; q                ;
+; |snake_vhdl|num[17]   ; |snake_vhdl|num[17]   ; q                ;
+; |snake_vhdl|num[16]   ; |snake_vhdl|num[16]   ; q                ;
+; |snake_vhdl|num[15]   ; |snake_vhdl|num[15]   ; q                ;
+; |snake_vhdl|num[14]   ; |snake_vhdl|num[14]   ; q                ;
+; |snake_vhdl|num[13]   ; |snake_vhdl|num[13]   ; q                ;
+; |snake_vhdl|num[12]   ; |snake_vhdl|num[12]   ; q                ;
+; |snake_vhdl|num[11]   ; |snake_vhdl|num[11]   ; q                ;
+; |snake_vhdl|num[10]   ; |snake_vhdl|num[10]   ; q                ;
+; |snake_vhdl|num[9]    ; |snake_vhdl|num[9]    ; q                ;
+; |snake_vhdl|num[8]    ; |snake_vhdl|num[8]    ; q                ;
+; |snake_vhdl|num[7]    ; |snake_vhdl|num[7]    ; q                ;
+; |snake_vhdl|num[6]    ; |snake_vhdl|num[6]    ; q                ;
+; |snake_vhdl|num[5]    ; |snake_vhdl|num[5]    ; q                ;
+; |snake_vhdl|num[4]    ; |snake_vhdl|num[4]    ; q                ;
+; |snake_vhdl|Add0~8    ; |snake_vhdl|Add0~9    ; cout             ;
+; |snake_vhdl|Add0~10   ; |snake_vhdl|Add0~10   ; combout          ;
+; |snake_vhdl|Add0~10   ; |snake_vhdl|Add0~11   ; cout             ;
+; |snake_vhdl|Add0~12   ; |snake_vhdl|Add0~12   ; combout          ;
+; |snake_vhdl|Add0~12   ; |snake_vhdl|Add0~13   ; cout             ;
+; |snake_vhdl|Add0~14   ; |snake_vhdl|Add0~14   ; combout          ;
+; |snake_vhdl|Add0~14   ; |snake_vhdl|Add0~15   ; cout             ;
+; |snake_vhdl|Add0~16   ; |snake_vhdl|Add0~16   ; combout          ;
+; |snake_vhdl|Add0~16   ; |snake_vhdl|Add0~17   ; cout             ;
+; |snake_vhdl|Add0~18   ; |snake_vhdl|Add0~18   ; combout          ;
+; |snake_vhdl|Add0~18   ; |snake_vhdl|Add0~19   ; cout             ;
+; |snake_vhdl|Add0~20   ; |snake_vhdl|Add0~20   ; combout          ;
+; |snake_vhdl|Add0~20   ; |snake_vhdl|Add0~21   ; cout             ;
+; |snake_vhdl|Add0~22   ; |snake_vhdl|Add0~22   ; combout          ;
+; |snake_vhdl|Add0~22   ; |snake_vhdl|Add0~23   ; cout             ;
+; |snake_vhdl|Add0~24   ; |snake_vhdl|Add0~24   ; combout          ;
+; |snake_vhdl|Add0~24   ; |snake_vhdl|Add0~25   ; cout             ;
+; |snake_vhdl|Add0~26   ; |snake_vhdl|Add0~26   ; combout          ;
+; |snake_vhdl|Add0~26   ; |snake_vhdl|Add0~27   ; cout             ;
+; |snake_vhdl|Add0~28   ; |snake_vhdl|Add0~28   ; combout          ;
+; |snake_vhdl|Add0~28   ; |snake_vhdl|Add0~29   ; cout             ;
+; |snake_vhdl|Add0~30   ; |snake_vhdl|Add0~30   ; combout          ;
+; |snake_vhdl|Add0~30   ; |snake_vhdl|Add0~31   ; cout             ;
+; |snake_vhdl|Add0~32   ; |snake_vhdl|Add0~32   ; combout          ;
+; |snake_vhdl|Add0~32   ; |snake_vhdl|Add0~33   ; cout             ;
+; |snake_vhdl|Add0~34   ; |snake_vhdl|Add0~34   ; combout          ;
+; |snake_vhdl|Add0~34   ; |snake_vhdl|Add0~35   ; cout             ;
+; |snake_vhdl|Add0~36   ; |snake_vhdl|Add0~36   ; combout          ;
+; |snake_vhdl|Add0~36   ; |snake_vhdl|Add0~37   ; cout             ;
+; |snake_vhdl|Add0~38   ; |snake_vhdl|Add0~38   ; combout          ;
+; |snake_vhdl|Add0~38   ; |snake_vhdl|Add0~39   ; cout             ;
+; |snake_vhdl|Add0~40   ; |snake_vhdl|Add0~40   ; combout          ;
+; |snake_vhdl|Add0~40   ; |snake_vhdl|Add0~41   ; cout             ;
+; |snake_vhdl|Add0~42   ; |snake_vhdl|Add0~42   ; combout          ;
+; |snake_vhdl|Add0~42   ; |snake_vhdl|Add0~43   ; cout             ;
+; |snake_vhdl|Add0~44   ; |snake_vhdl|Add0~44   ; combout          ;
+; |snake_vhdl|Add0~44   ; |snake_vhdl|Add0~45   ; cout             ;
+; |snake_vhdl|Add0~46   ; |snake_vhdl|Add0~46   ; combout          ;
+; |snake_vhdl|Add0~46   ; |snake_vhdl|Add0~47   ; cout             ;
+; |snake_vhdl|Add0~48   ; |snake_vhdl|Add0~48   ; combout          ;
+; |snake_vhdl|Add0~48   ; |snake_vhdl|Add0~49   ; cout             ;
+; |snake_vhdl|Add0~50   ; |snake_vhdl|Add0~50   ; combout          ;
+; |snake_vhdl|Add0~50   ; |snake_vhdl|Add0~51   ; cout             ;
+; |snake_vhdl|Add0~52   ; |snake_vhdl|Add0~52   ; combout          ;
+; |snake_vhdl|Add0~52   ; |snake_vhdl|Add0~53   ; cout             ;
+; |snake_vhdl|Add0~54   ; |snake_vhdl|Add0~54   ; combout          ;
+; |snake_vhdl|Add0~54   ; |snake_vhdl|Add0~55   ; cout             ;
+; |snake_vhdl|Add0~56   ; |snake_vhdl|Add0~56   ; combout          ;
+; |snake_vhdl|Add0~56   ; |snake_vhdl|Add0~57   ; cout             ;
+; |snake_vhdl|Add0~58   ; |snake_vhdl|Add0~58   ; combout          ;
+; |snake_vhdl|Add0~58   ; |snake_vhdl|Add0~59   ; cout             ;
+; |snake_vhdl|Add0~60   ; |snake_vhdl|Add0~60   ; combout          ;
+; |snake_vhdl|Add0~60   ; |snake_vhdl|Add0~61   ; cout             ;
+; |snake_vhdl|num[31]   ; |snake_vhdl|num[31]   ; q                ;
+; |snake_vhdl|Equal0~0  ; |snake_vhdl|Equal0~0  ; combout          ;
+; |snake_vhdl|Equal0~1  ; |snake_vhdl|Equal0~1  ; combout          ;
+; |snake_vhdl|Equal0~2  ; |snake_vhdl|Equal0~2  ; combout          ;
+; |snake_vhdl|Equal0~3  ; |snake_vhdl|Equal0~3  ; combout          ;
+; |snake_vhdl|Equal0~4  ; |snake_vhdl|Equal0~4  ; combout          ;
+; |snake_vhdl|Equal0~5  ; |snake_vhdl|Equal0~5  ; combout          ;
+; |snake_vhdl|Equal0~6  ; |snake_vhdl|Equal0~6  ; combout          ;
+; |snake_vhdl|Equal0~7  ; |snake_vhdl|Equal0~7  ; combout          ;
+; |snake_vhdl|Equal0~10 ; |snake_vhdl|Equal0~10 ; combout          ;
+; |snake_vhdl|num~64    ; |snake_vhdl|num~64    ; combout          ;
+; |snake_vhdl|b1~output ; |snake_vhdl|b1~output ; o                ;
+; |snake_vhdl|b1        ; |snake_vhdl|b1        ; padout           ;
+; |snake_vhdl|c1~output ; |snake_vhdl|c1~output ; o                ;
+; |snake_vhdl|c1        ; |snake_vhdl|c1        ; padout           ;
+; |snake_vhdl|e2~output ; |snake_vhdl|e2~output ; o                ;
+; |snake_vhdl|e2        ; |snake_vhdl|e2        ; padout           ;
+; |snake_vhdl|f2~output ; |snake_vhdl|f2~output ; o                ;
+; |snake_vhdl|f2        ; |snake_vhdl|f2        ; padout           ;
++-----------------------+-----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jun 17 22:29:19 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off snake_vhdl -c snake_vhdl
+Info: Using vector source file "C:/altera/90sp1/quartus/projekt3/snake_vhdl.vwf"
+Info: Inverted registers were found during simulation
+    Info: Register: |snake_vhdl|num[31]
+    Info: Register: |snake_vhdl|num[0]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      35.44 %
+Info: Number of transitions in simulation is 1893
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 167 megabytes
+    Info: Processing ended: Wed Jun 17 22:29:20 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

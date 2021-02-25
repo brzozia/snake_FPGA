@@ -1,0 +1,226 @@
+Simulator report for snake2
+Wed Jun 17 12:57:37 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 20.0 s       ;
+; Simulation Netlist Size     ; 53 nodes     ;
+; Simulation Coverage         ;      79.25 % ;
+; Total Number of Transitions ; 438          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C16F484C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      79.25 % ;
+; Total nodes checked                                 ; 53           ;
+; Total output ports checked                          ; 53           ;
+; Total output ports with complete 1/0-value coverage ; 42           ;
+; Total output ports with no 1/0-value coverage       ; 9            ;
+; Total output ports with no 1-value coverage         ; 11           ;
+; Total output ports with no 0-value coverage         ; 9            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                            ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |snake2|num[0]           ; |snake2|num[0]           ; q                ;
+; |snake2|num[1]           ; |snake2|num[1]           ; q                ;
+; |snake2|num[2]           ; |snake2|num[2]           ; q                ;
+; |snake2|num[3]           ; |snake2|num[3]           ; q                ;
+; |snake2|WideOr0~0        ; |snake2|WideOr0~0        ; combout          ;
+; |snake2|WideOr1~0        ; |snake2|WideOr1~0        ; combout          ;
+; |snake2|WideOr2~0        ; |snake2|WideOr2~0        ; combout          ;
+; |snake2|WideOr3~0        ; |snake2|WideOr3~0        ; combout          ;
+; |snake2|WideOr4~0        ; |snake2|WideOr4~0        ; combout          ;
+; |snake2|WideOr5~0        ; |snake2|WideOr5~0        ; combout          ;
+; |snake2|WideOr6~0        ; |snake2|WideOr6~0        ; combout          ;
+; |snake2|WideOr7~0        ; |snake2|WideOr7~0        ; combout          ;
+; |snake2|WideOr8~0        ; |snake2|WideOr8~0        ; combout          ;
+; |snake2|WideOr9~0        ; |snake2|WideOr9~0        ; combout          ;
+; |snake2|num~8            ; |snake2|num~8            ; combout          ;
+; |snake2|num~9            ; |snake2|num~9            ; combout          ;
+; |snake2|Add0~0           ; |snake2|Add0~0           ; combout          ;
+; |snake2|num~10           ; |snake2|num~10           ; combout          ;
+; |snake2|num~11           ; |snake2|num~11           ; combout          ;
+; |snake2|a1~output        ; |snake2|a1~output        ; o                ;
+; |snake2|a1               ; |snake2|a1               ; padout           ;
+; |snake2|a2~output        ; |snake2|a2~output        ; o                ;
+; |snake2|a2               ; |snake2|a2               ; padout           ;
+; |snake2|b2~output        ; |snake2|b2~output        ; o                ;
+; |snake2|b2               ; |snake2|b2               ; padout           ;
+; |snake2|c2~output        ; |snake2|c2~output        ; o                ;
+; |snake2|c2               ; |snake2|c2               ; padout           ;
+; |snake2|d1~output        ; |snake2|d1~output        ; o                ;
+; |snake2|d1               ; |snake2|d1               ; padout           ;
+; |snake2|d2~output        ; |snake2|d2~output        ; o                ;
+; |snake2|d2               ; |snake2|d2               ; padout           ;
+; |snake2|e1~output        ; |snake2|e1~output        ; o                ;
+; |snake2|e1               ; |snake2|e1               ; padout           ;
+; |snake2|f1~output        ; |snake2|f1~output        ; o                ;
+; |snake2|f1               ; |snake2|f1               ; padout           ;
+; |snake2|g1~output        ; |snake2|g1~output        ; o                ;
+; |snake2|g1               ; |snake2|g1               ; padout           ;
+; |snake2|g2~output        ; |snake2|g2~output        ; o                ;
+; |snake2|g2               ; |snake2|g2               ; padout           ;
+; |snake2|clk~input        ; |snake2|clk~input        ; o                ;
+; |snake2|clk              ; |snake2|clk              ; padout           ;
+; |snake2|clk~inputclkctrl ; |snake2|clk~inputclkctrl ; outclk           ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------+
+; Missing 1-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |snake2|b1~output   ; |snake2|b1~output   ; o                ;
+; |snake2|b1          ; |snake2|b1          ; padout           ;
+; |snake2|c1~output   ; |snake2|c1~output   ; o                ;
+; |snake2|c1          ; |snake2|c1          ; padout           ;
+; |snake2|e2~output   ; |snake2|e2~output   ; o                ;
+; |snake2|e2          ; |snake2|e2          ; padout           ;
+; |snake2|f2~output   ; |snake2|f2~output   ; o                ;
+; |snake2|f2          ; |snake2|f2          ; padout           ;
+; |snake2|reset~input ; |snake2|reset~input ; o                ;
+; |snake2|reset       ; |snake2|reset       ; padout           ;
+; |snake2|~DEV_OE~    ; |snake2|~DEV_OE~    ; dev_oe_out       ;
++---------------------+---------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------+
+; Missing 0-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |snake2|b1~output ; |snake2|b1~output ; o                ;
+; |snake2|b1        ; |snake2|b1        ; padout           ;
+; |snake2|c1~output ; |snake2|c1~output ; o                ;
+; |snake2|c1        ; |snake2|c1        ; padout           ;
+; |snake2|e2~output ; |snake2|e2~output ; o                ;
+; |snake2|e2        ; |snake2|e2        ; padout           ;
+; |snake2|f2~output ; |snake2|f2~output ; o                ;
+; |snake2|f2        ; |snake2|f2        ; padout           ;
+; |snake2|~DEV_OE~  ; |snake2|~DEV_OE~  ; dev_oe_out       ;
++-------------------+-------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jun 17 12:57:37 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off snake2 -c snake2
+Info: Using vector source file "C:/altera/90sp1/quartus/projekt2/snake2.vwf"
+Warning: Can't find signal in vector source file for input pin "|snake2|~DEV_OE~"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      79.25 %
+Info: Number of transitions in simulation is 438
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 167 megabytes
+    Info: Processing ended: Wed Jun 17 12:57:37 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
